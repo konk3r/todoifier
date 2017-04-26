@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:background="?attr/selectableItemBackground"
+    >
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:id="@+id/list_item_to_do_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="to do"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:layout_weight="1"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/list_item_to_do_is_finished"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:src="@drawable/ic_check_24dp"
+        />
+
+</LinearLayout>
