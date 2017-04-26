@@ -54,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(view -> addNewItem());
     }
 
+    private void findViews() {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        list = (RecyclerView) findViewById(R.id.list);
+    }
+
     private void createList() {
         adapter = new ToDoListAdapter(toDoManager);
         list.setLayoutManager(new LinearLayoutManager(this));
@@ -80,11 +86,5 @@ public class MainActivity extends AppCompatActivity {
 
         AlertDialog dialog = builder.create();
         dialog.show();
-    }
-
-    private void findViews() {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        fab = (FloatingActionButton) findViewById(R.id.fab);
-        list = (RecyclerView) findViewById(R.id.list);
     }
 }
